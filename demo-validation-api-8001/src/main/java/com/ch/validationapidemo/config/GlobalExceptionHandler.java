@@ -1,7 +1,9 @@
 package com.ch.validationapidemo.config;
 
 import com.ch.common.domain.Result;
+import javafx.fxml.Initializable;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.InitializingBean;
 import org.springframework.http.HttpStatus;
 import org.springframework.validation.BindException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
@@ -9,6 +11,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+import javax.naming.spi.InitialContextFactory;
 import javax.validation.ValidationException;
 
 /**
@@ -20,7 +23,7 @@ import javax.validation.ValidationException;
 
 @Slf4j
 @RestControllerAdvice
-public class GlobalExceptionHandler {
+public class GlobalExceptionHandler{
     /**
      * 处理Validated校验异常
      * <p>

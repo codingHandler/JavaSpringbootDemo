@@ -1,0 +1,6 @@
+[1;36m2022-04-08 11:39:27.779[0;39m [34m[main][0;39m [1;31m[ INFO][0;39m [35mc.c.l.LogbackDemoTest[0;39m - [33m[logStarting,55][0;39m : Starting LogbackDemoTest using Java 1.8.0_91 on LAPTOP-C1H2KGNJ with PID 31372 (started by admin in F:\companyItem\JavaSpringbootDemo\demo-logback-8002)
+[1;36m2022-04-08 11:39:27.783[0;39m [34m[main][0;39m [1;31m[ INFO][0;39m [35mc.c.l.LogbackDemoTest[0;39m - [33m[logStartupProfileInfo,640][0;39m : No active profile set, falling back to 1 default profile: "default"
+[1;36m2022-04-08 11:39:29.552[0;39m [34m[main][0;39m [1;31m[ INFO][0;39m [35mc.c.l.LogbackDemoTest[0;39m - [33m[logStarted,61][0;39m : Started LogbackDemoTest in 2.132 seconds (JVM running for 3.566)
+[1;36m2022-04-08 11:39:30.006[0;39m [34m[main][0;39m [1;31m[ERROR][0;39m [35mc.c.l.LogBackDemoMain[0;39m - [33m[test2,52][0;39m : error信息
+[1;36m2022-04-08 11:39:30.008[0;39m [34m[main][0;39m [1;31m[ WARN][0;39m [35mc.c.l.LogBackDemoMain[0;39m - [33m[test2,53][0;39m : warn信息
+[1;36m2022-04-08 11:39:30.008[0;39m [34m[main][0;39m [1;31m[ INFO][0;39m [35mc.c.l.LogBackDemoMain[0;39m - [33m[test2,54][0;39m : info信息

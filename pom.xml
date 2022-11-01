@@ -17,6 +17,16 @@
     <modules>
         <module>demo-validation-api-8001</module>
         <module>demo-common</module>
+        <module>demo-logback-8002</module>
+        <module>demo-rabbitmq-8003</module>
+        <module>demo-netty</module>
+        <module>demo-fastdfs-8004</module>
+        <module>demo-spring-8005</module>
+        <module>demo-elasticsearch-8006</module>
+        <module>demo-javaTest</module>
+        <module>demo-redis-8007</module>
+        <module>netty4-demos</module>
+        <module>demo-validation-api-8001</module>
     </modules>
 
     <properties>
@@ -24,6 +34,7 @@
         <web.version>2.6.3</web.version>
         <lombok.version>1.18.20</lombok.version>
         <boot.starter.varsion>2.6.3</boot.starter.varsion>
+        <fastjson.version>1.2.79</fastjson.version>
     </properties>
 
     <dependencies>
@@ -32,7 +43,15 @@
             <artifactId>spring-boot-starter</artifactId>
             <version>${boot.starter.varsion}</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <version>${boot.starter.varsion}</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
+
 
 
     <dependencyManagement>
@@ -49,6 +68,13 @@
                 <optional>true</optional>
                 <version>${lombok.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 

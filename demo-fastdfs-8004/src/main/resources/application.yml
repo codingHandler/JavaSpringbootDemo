@@ -1,0 +1,17 @@
+server:
+  port: 8004
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB   #单个文件最大大小
+# FDFS配置
+fdfs:
+  soTimeout: 1500 			# socket连接超时时长
+  connectTimeout: 600 		# 连接tracker服务器超时时长
+  reqHost: 159.75.251.227   # nginx访问地址
+  reqPort: 8886             # nginx访问端口
+  thumb-image:              # 缩略图的宽高
+    width: 150
+    height: 150
+  tracker-list: # tracker服务配置地址列表，替换成自己服务的IP地址，支持多个
+    - 159.75.251.227:22122

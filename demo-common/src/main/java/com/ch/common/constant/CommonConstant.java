@@ -78,5 +78,8 @@ public interface CommonConstant {
     /**访问权限认证未通过 510*/
     public static final Integer SC_JEECG_NO_AUTHZ=510;
 
+    /** fastdfs返回路径前缀*/
+    public static final String HTTP_PRODOCOL = "http://";
+
 
 }

@@ -1,0 +1,27 @@
+server:
+  port: 8003
+spring:
+  main:
+    allow-circular-references: true   # 解决升级 Spring Boot 2.6后，因循环引用导致启动时报错的问题
+  application:
+    name: demo-rabbitmq
+  rabbitmq:
+    host: 159.75.251.227
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /  # 虚拟主机
+    publisher-confirm-type: correlated  # 异步回调,定义ConfirmCallBack,MQ返回结果时会调用这个ConfirmCallBack
+    publisher-returns: true   # 开启publish-return功能
+    template:
+      mandatory: true   # 定义消息路由失败策略,true则调用ReturnCallBack;false则直接丢弃
+    listener:
+      simple:
+        prefetch: 1 # 消费者预取的信息数量
+        acknowledge-mode: auto   # 自动应答
+        retry:
+          enabled: true    #开启消费者失败重试
+          multiplier: 1    #失败等待时长倍数,下次等待时长 = multiplier* last-interval
+          max-attempts: 3  #最大重试次数
+          initial-interval: 1000 # 初始失败等待时长
+

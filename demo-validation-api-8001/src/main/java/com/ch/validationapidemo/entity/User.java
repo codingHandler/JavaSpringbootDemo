@@ -25,7 +25,8 @@ public class User {
     private String email;
 
     @NotBlank(message = "手机号不可为空")
-    @Pattern(regexp = "^((13[0-9])|(15[^4,\\D])|(18[0,3-9]))\\d{8}$", message = "手机号格式不正确")
+    //@Pattern(regexp = "^((13[0-9])|(15[^4,\\D])|(18[0,3-9]))\\d{8}$", message = "手机号格式不正确")
+    @Pattern(regexp = "^(13|14|15|16|17|18|19)[0-9]{9}", message = "手机号格式不正确")
     private String phone;
 
     @Min(value = 18, message = "年龄最小为18")
